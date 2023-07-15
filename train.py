@@ -231,7 +231,7 @@ for batch_count in range(len(test_list) // batch_size):
     test_balanced_batches.append(batch.loc[balanced_batch_index])
 
 for train_disbalance in train_disbalances:   
-    
+    plt.clf()    
     X = pd.concat(
         train_balanced_batches,
         sort=False,
